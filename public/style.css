@@ -1,0 +1,180 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaeafb;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+header h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+form label {
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+form input,
+form textarea {
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+    resize: none;
+}
+
+form textarea {
+    min-height: 50px; /* Ajuste da altura mínima para melhorar a experiência do usuário */
+    overflow-y: auto;
+}
+
+form button {
+    background: #c648e2;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição definida */
+}
+
+form button:hover {
+    background-color: #a236c1; /* Efeito de hover para melhor interatividade */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #c562f0;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table tr:hover {
+    background: #f1f1f1;
+}
+
+
+#images {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 600px;
+    margin-top: -120px; 
+    margin-left: -200px;
+}
+
+#images img {
+    max-width: 200px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    color: #000;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header h2 {
+        font-size: 14px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form button {
+        padding: 10px;
+    }
+
+    table th,
+    table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    #images {
+        flex-direction: column; /* Alteração para alinhar imagens em coluna em telas menores */
+        align-items: center;
+    }
+}
